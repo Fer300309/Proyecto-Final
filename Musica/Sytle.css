@@ -1,0 +1,125 @@
+body {
+  background: radial-gradient(circle at top, #0d0d0d, #000);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 60px 20px; /* ← espacio antes del borde */
+  display: flex;
+  flex-direction: column; /* ← para que las cajas estén una debajo de otra */
+  align-items: center;
+  gap: 40px; /* ← separación entre cada álbum */
+}
+
+/* 🔹 Caja de álbum */
+.album {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 51, 128, 0.3);
+}
+
+/* 📦 Caja individual del álbum */
+.album {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔸 Portada y encabezado */
+.album-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.album-header:hover .album-cover {
+  transform: scale(1.05);
+}
+
+.album-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.album-info h2 {
+  margin: 5px 0 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.album-info p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* 🎧 Reproductor */
+.player {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vinilo {
+  width: 120px;
+  margin: 15px 0;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+
+.spin {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 🎵 Lista de canciones */
+.tracklist {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.tracklist li {
+  margin: 8px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tracklist li:hover {
+  background: rgba(255, 51, 128, 0.15);
+  color: #ff3380;
+}
