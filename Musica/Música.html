@@ -1,3 +1,5 @@
+
+  
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,12 +10,20 @@
 </head>
 
   <body>
-    <header></header>
+    <header>
+      <img src="Imagenes/logo.jpg" alt="Rauw Alejandro">
+    </header>
     
     
 
-    <section class="album">
+    <section class="album"  id="album-cosanuestra0">
   <div class="album-header" onclick="togglePlayer('cosanuestra0')">
+    
+    <!-- 🌟 Decoraciones fijas -->
+
+  
+  
+
     <img src="Imagenes/Portadas/cosanuestra0.png" alt="cosanuestra0" class="album-cover">
     <div class="album-info">
       <h2>Cosa Nuestra: Capítulo 0</h2>
@@ -111,7 +121,7 @@
       <li onclick="playTrack('audio/playasaturno/track2.mp3', 'playasaturno')">02 - CUANDO BAJE EL SOL</li>
       <li onclick="playTrack('audio/playasaturno/track3.mp3', 'playasaturno')">03 - AL CALLAO´</li>
       <li onclick="playTrack('audio/playasaturno/track4.mp3', 'playasaturno')">04 - CUKI</li>
-      <li onclick="playTrack('audio/playasaturno/track5.mp3', 'playasaturno')">05 - NO ME SUELTES</li>
+      <li onclick="playTrack('audio/playasaturno/track5.mp3', 'playasaturno')">05 - NO ME LA MOLESTA</li>
       <li onclick="playTrack('audio/playasaturno/track6.mp3', 'playasaturno')">06 - PICARDÍA</li>
       <li onclick="playTrack('audio/playasaturno/track7.mp3', 'playasaturno')">07 - PONTE NASTY</li>
       <li onclick="playTrack('audio/playasaturno/track8.mp3', 'playasaturno')">08 - INQUIETO</li>
@@ -125,6 +135,188 @@
   </div>
   
 </section>
+
+<section class="album">
+  <div class="album-header" onclick="togglePlayer('saturno')">
+    <img src="Imagenes/Portadas/Saturno.webp" alt="saturno" class="album-cover">
+    <div class="album-info">
+      <h2>Saturno</h2>
+      <p>2023</p>
+    </div>
+  </div>
+
+  <div class="player" id="player-saturno">
+    <div class="vinyl-box">
+      <img src="Imagenes/Vinilos/saturno_ec8a7ab957.webp" class="vinilo" id="vinilo-saturno">
+    </div>
+
+    <audio id="audio-saturno" src="audio/saturno/"></audio>
+
+    <ul class="tracklist">
+      <li onclick="playTrack('audio/saturno/track1.mp3', 'saturno')">01 - SATURNO</li>
+      <li onclick="playTrack('audio/saturno/track2.mp3', 'saturno')">02 - PUNTO 40L</li>
+      <li onclick="playTrack('audio/saturno/track3.mp3', 'saturno')">03 - MÁS DE UNA VEZ</li>
+      <li onclick="playTrack('audio/saturno/track4.mp3', 'saturno')">04 - LEJOS DEL CIELO</li>
+      <li onclick="playTrack('audio/saturno/track5.mp3', 'saturno')">05 - DEJAU´</li>
+      <li onclick="playTrack('audio/saturno/track6.mp3', 'saturno')">06 - GATAS</li>
+      <li onclick="playTrack('audio/saturno/track7.mp3', 'saturno')">07 - PANTIES Y BRASIERES</li>
+      <li onclick="playTrack('audio/saturno/track8.mp3', 'saturno')">08 - CAZADORES</li>
+      <li onclick="playTrack('audio/saturno/track9.mp3', 'saturno')">09 - DECA´A LA VEGAS</li>
+      <li onclick="playTrack('audio/saturno/track10.mp3', 'saturno')">10 - QUÉ RICO CH**GAMOS</li>
+      <li onclick="playTrack('audio/saturno/track11.mp3', 'saturno')">11 - RON COLA</li>
+      <li onclick="playTrack('audio/saturno/track12.mp3', 'saturno')">12 - NO ME SUELTES</li>
+      <li onclick="playTrack('audio/saturno/track13.mp3', 'saturno')">13 - VERDE MENTAS</li>
+      <li onclick="playTrack('audio/saturno/track14.mp3', 'saturno')">14 - CORAZÓN DESPEINADO</li>
+      <li onclick="playTrack('audio/saturno/track15.mp3', 'saturno')">15 - DIME QUIÉN????</li>
+      <li onclick="playTrack('audio/saturno/track16.mp3', 'saturno')">16 - RAULEETO</li>
+      <li onclick="playTrack('audio/saturno/track17.mp3', 'saturno')">17 - DE CAROLINA</li>
+      <li onclick="playTrack('audio/saturno/track18.mp3', 'saturno')">18 - LOKERA</li>
+    </ul>
+  </div>
+  
+</section>
+
+<section class="album">
+  <div class="album-header" onclick="togglePlayer('trap-cake-vol-2')">
+    <img src="Imagenes/Portadas/TrapCakevol2.webp" alt="trap-cake-vol-2" class="album-cover">
+    <div class="album-info">
+      <h2>TRAP CAKE VOL.2</h2>
+      <p>2022</p>
+    </div>
+  </div>
+
+  <div class="player" id="player-trap-cake-vol-2">
+    <div class="vinyl-box">
+      <img src="Imagenes/Vinilos/trap_cake2_1e8e0d3519.webp" class="vinilo" id="vinilo-trap-cake-vol-2">
+    </div>
+
+    <audio id="audio-trap-cake-vol-2" src="audio/TrapCakeVol2/"></audio>
+
+    <ul class="tracklist">
+      <li onclick="playTrack('audio/TrapCakeVol2/track1.mp3', 'trap-cake-vol-2')">01 - MUSEO</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track2.mp3', 'trap-cake-vol-2')">02 - CAPRICHOSO</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track3.mp3', 'trap-cake-vol-2')">03 - RED VELVET</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track4.mp3', 'trap-cake-vol-2')">04 - FCK U X2</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track5.mp3', 'trap-cake-vol-2')">05 - NO DRAMA</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track6.mp3', 'trap-cake-vol-2')">06 - WUEPA</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track7.mp3', 'trap-cake-vol-2')">07 - GRACIAS POR NADA</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track8.mp3', 'trap-cake-vol-2')">08 - GTR</li>
+      <li onclick="playTrack('audio/TrapCakeVol2/track9.mp3', 'trap-cake-vol-2')">09 - HACKIAO</li>
+     
+  </div>
+  
+</section>
+
+
+<section class="album">
+  <div class="album-header" onclick="togglePlayer('vice-versa')">
+    <img src="Imagenes/Portadas/ViceVersa.webp" alt="vice-versa" class="album-cover">
+    <div class="album-info">
+      <h2>VICE VERSA</h2>
+      <p>2021</p>
+    </div>
+  </div>
+
+  <div class="player" id="player-vice-versa">
+    <div class="vinyl-box">
+      <img src="Imagenes/Vinilos/viceversa_e752bb5af5.webp" class="vinilo" id="vinilo-vice-versa">
+    </div>
+
+    <audio id="audio-vice-versa" src="audio/ViceVersa/"></audio>
+
+    <ul class="tracklist">
+      <li onclick="playTrack('audio/vice-versa/track1.mp3', 'vice-versa')">01 - Todo de Ti</li>
+      <li onclick="playTrack('audio/vice-versa/track2.mp3', 'vice-versa')">02 - Sexo Virtual</li>
+      <li onclick="playTrack('audio/vice-versa/track3.mp3', 'vice-versa')">03 - Nubes</li>
+      <li onclick="playTrack('audio/vice-versa/track4.mp3', 'vice-versa')">04 - Desesperados</li>
+      <li onclick="playTrack('audio/vice-versa/track5.mp3', 'vice-versa')">05 - 2/Catorce</li>
+      <li onclick="playTrack('audio/vice-versa/track6.mp3', 'vice-versa')">06 - Aquel Nap ZzZz</li>
+      <li onclick="playTrack('audio/vice-versa/track7.mp3', 'vice-versa')">07 - Cúrame</li>
+      <li onclick="playTrack('audio/vice-versa/track8.mp3', 'vice-versa')">08 - Cosa Guapa</li>
+      <li onclick="playTrack('audio/vice-versa/track9.mp3', 'vice-versa')">09 - Desenfocao´</li>
+      <li onclick="playTrack('audio/vice-versa/track10.mp3', 'vice-versa')">10 - ¿Cuándo Fue?</li>
+      <li onclick="playTrack('audio/vice-versa/track11.mp3', 'vice-versa')">11 - La Old Skul</li>
+      <li onclick="playTrack('audio/vice-versa/track12.mp3', 'vice-versa')">12 - ¿Y Eso?</li>
+      <li onclick="playTrack('audio/vice-versa/track13.mp3', 'vice-versa')">13 - Tengo un Pal</li>
+      <li onclick="playTrack('audio/vice-versa/track14.mp3', 'vice-versa')">14 - Brazilera</li>
+ 
+    </ul>
+  </div>
+  
+</section>
+
+<section class="album">
+  <div class="album-header" onclick="togglePlayer('afrodisíaco')">
+    <img src="Imagenes/Portadas/Afrodisíaco.jpg" alt="afrodisíaco" class="album-cover">
+    <div class="album-info">
+      <h2>Afrodisíaco</h2>
+      <p>2020</p>
+    </div>
+  </div>
+
+  <div class="player" id="player-afrodisíaco">
+    <div class="vinyl-box">
+      <img src="Imagenes/Vinilos/afrodisiaco_1_c9d0b69ec4.webp" class="vinilo" id="vinilo-afrodisíaco">
+    </div>
+
+    <audio id="audio-afrodisíaco" src="audio/afrodisíaco/"></audio>
+
+    <ul class="tracklist">
+      <li onclick="playTrack('audio/afrodisíaco/track1.mp3', 'afrodisíaco')">01 - Dile a El</li>
+      <li onclick="playTrack('audio/afrodisíaco/track2.mp3', 'afrodisíaco')">02 - Strawberry Kiwi</li>
+      <li onclick="playTrack('audio/afrodisíaco/track3.mp3', 'afrodisíaco')">03 - Mood</li>
+      <li onclick="playTrack('audio/afrodisíaco/track4.mp3', 'afrodisíaco')">04 - Química</li>
+      <li onclick="playTrack('audio/afrodisíaco/track5.mp3', 'afrodisíaco')">05 - Enchule</li>
+      <li onclick="playTrack('audio/afrodisíaco/track6.mp3', 'afrodisíaco')">06 - De Cora <3 </li>
+      <li onclick="playTrack('audio/afrodisíaco/track7.mp3', 'afrodisíaco')">07 - Un Sueño</li>
+      <li onclick="playTrack('audio/afrodisíaco/track8.mp3', 'afrodisíaco')">08 - Reloj</li>
+      <li onclick="playTrack('audio/afrodisíaco/track9.mp3', 'afrodisíaco')">09 - No Te Creo</li>
+      <li onclick="playTrack('audio/afrodisíaco/track10.mp3', 'afrodisíaco')">10 - Soy Una Gargola</li>
+      <li onclick="playTrack('audio/afrodisíaco/track11.mp3', 'afrodisíaco')">11 - Pensándote</li>
+      <li onclick="playTrack('audio/afrodisíaco/track12.mp3', 'afrodisíaco')">12 - Perreo Pesau´</li>
+      <li onclick="playTrack('audio/afrodisíaco/track13.mp3', 'afrodisíaco')">13 - Algo Mágico</li>
+      <li onclick="playTrack('audio/afrodisíaco/track14.mp3', 'afrodisíaco')">14 - Ponte Pa´Mi</li>
+      <li onclick="playTrack('audio/afrodisíaco/track15.mp3', 'afrodisíaco')">15 - Elegí</li>
+      <li onclick="playTrack('audio/afrodisíaco/track16.mp3', 'afrodisíaco')">16 - Tatto-Remix</li>
+
+    </ul>
+  </div>
+  
+</section>
+
+
+</section>
+
+<section class="album">
+  <div class="album-header" onclick="togglePlayer('trap-cake')">
+    <img src="Imagenes/Portadas/TrapCake.webp" alt="trap-cake" class="album-cover">
+    <div class="album-info">
+      <h2>Trap Cake Vol.1</h2>
+      <p>2019</p>
+    </div>
+  </div>
+
+  <div class="player" id="player-trap-cake">
+    <div class="vinyl-box">
+      <img src="Imagenes/Vinilos/trap_cake1_6318fd0d6b.webp" class="vinilo" id="vinilo-trap-cake">
+    </div>
+
+    <audio id="audio-trap-cake" src="audio/TrapCake/"></audio>
+
+    <ul class="tracklist">
+      <li onclick="playTrack('audio/TrapCake/track1.mp3', 'trap-cake')">01 - Al Mismo Tiempo</li>
+      <li onclick="playTrack('audio/TrapCake/track2.mp3', 'trap-cake')">02 - Cubierto de Ti</li>
+      <li onclick="playTrack('audio/TrapCake/track3.mp3', 'trap-cake')">03 - Espuma</li>
+      <li onclick="playTrack('audio/TrapCake/track4.mp3', 'trap-cake')">04 - Encima de Mi</li>
+      <li onclick="playTrack('audio/TrapCake/track5.mp3', 'trap-cake')">05 - Na´de Ti</li>
+      <li onclick="playTrack('audio/TrapCake/track6.mp3', 'trap-cake')">06 - Cuento de Hadas</li>
+      <li onclick="playTrack('audio/TrapCake/track7.mp3', 'trap-cake')">07 - Hasta Donde</li>
+    </ul>
+  </div>
+  
+</section>
+
+
 
 <script src="script.js"></script>
   </body>
