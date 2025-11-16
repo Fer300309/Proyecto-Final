@@ -18,8 +18,9 @@ function togglePlayer(albumId) {
 function playTrack(file, albumId) {
   const audio = document.getElementById(`audio-${albumId}`);
   const vinilo = document.getElementById(`vinilo-${albumId}`);
+  const trackList = document.querySelectorAll(`#player-${albumId} .tracklist li`);
 
-  // Pausar todos los demás audios
+  // Pausar otros audios
   document.querySelectorAll('audio').forEach(a => {
     if (a !== audio) a.pause();
   });
@@ -29,14 +30,33 @@ function playTrack(file, albumId) {
     if (v !== vinilo) v.classList.remove('spin');
   });
 
-  // Reproducir el audio actual
+  // Cargar y reproducir
   audio.src = file;
   audio.play();
-
-  // Girar vinilo solo del álbum actual
   vinilo.classList.add('spin');
 
-  audio.addEventListener('ended', () => vinilo.classList.remove('spin'));
+  // ---- SISTEMA DE SIGUIENTE CANCIÓN AUTOMÁTICA ----
+  audio.onended = () => {
+    let currentIndex = -1;
+
+    // Encontrar qué LI corresponde a este archivo
+    trackList.forEach((li, index) => {
+      if (li.getAttribute("onclick").includes(file)) {
+        currentIndex = index;
+      }
+    });
+
+    // Siguiente canción
+    const nextIndex = currentIndex + 1;
+
+    if (trackList[nextIndex]) {
+      // Sacar el archivo del onclick del siguiente li
+      const nextOnclick = trackList[nextIndex].getAttribute("onclick");
+      const nextFile = nextOnclick.match(/'(.*?)'/)[1];
+
+      playTrack(nextFile, albumId);
+    }
+  };
 }
 
 
